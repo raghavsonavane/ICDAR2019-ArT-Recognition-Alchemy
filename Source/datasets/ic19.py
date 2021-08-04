@@ -19,8 +19,8 @@ from Source.utils.data import transforms as T
 from Source.utils.labelmaps import get_vocabulary
 from .utils import TextSquare, Rotation
 
-from examples.config import get_args
-global_args = get_args(sys.argv[1:])
+# from examples.config import get_args
+# global_args = get_args(sys.argv[1:])
 
 
 class ic19(data.Dataset):

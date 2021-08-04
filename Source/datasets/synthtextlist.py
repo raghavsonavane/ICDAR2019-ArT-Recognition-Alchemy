@@ -18,8 +18,8 @@ import json
 import torch
 import torch.utils.data as data
 
-from examples.config import get_args
-global_args = get_args(sys.argv[1:])
+# from examples.config import get_args
+# global_args = get_args(sys.argv[1:])
 
 
 numericalphabet = list(string.digits + string.ascii_letters)

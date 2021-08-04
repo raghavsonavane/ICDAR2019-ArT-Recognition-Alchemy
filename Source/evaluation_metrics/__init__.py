@@ -1,13 +1,11 @@
 from __future__ import absolute_import
 
-from .metrics import Accuracy, EditDistance, RecPostProcess, Accuracy_with_lexicon, EditDistance_with_lexicon
+from .metrics import Accuracy, RecPostProcess, Accuracy_with_lexicon
 
 
 __factory = {
-    'accuracy': Accuracy,
-    'editdistance': EditDistance,
-    'accuracy_with_lexicon': Accuracy_with_lexicon,
-    'editdistance_with_lexicon': EditDistance_with_lexicon,
+    "accuracy": Accuracy,
+    "accuracy_with_lexicon": Accuracy_with_lexicon,
 }
 
 

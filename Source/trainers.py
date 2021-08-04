@@ -14,7 +14,7 @@ from .utils.serialization import save_checkpoint
 
 metrics_factory = evaluation_metrics.factory()
 
-global_args = get_args(sys.argv[1:])
+# global_args = get_args(sys.argv[1:])
 
 
 class BaseTrainer(object):

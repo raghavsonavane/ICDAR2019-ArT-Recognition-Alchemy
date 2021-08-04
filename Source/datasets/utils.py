@@ -3,8 +3,8 @@ import random
 import numpy as np
 import sys
 
-from examples.config import get_args
-global_args = get_args(sys.argv[1:])
+# from examples.config import get_args
+# global_args = get_args(sys.argv[1:])
 
 def TextSquare(img, size):
     """

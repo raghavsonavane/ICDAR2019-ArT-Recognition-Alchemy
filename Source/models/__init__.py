@@ -1,16 +1,10 @@
 from __future__ import absolute_import
 
 from .resnet_fpn import *
-from .resnet_fpn_v2 import *
-from .resnet_fpn_v3 import *
-from .resnet_fpn_v4 import *
 
 
 __factory = {
-    'ResNet_FPN': ResNet_FPN,
-    'ResNet_FPN_v2': ResNet_FPN_v2,
-    'ResNet_FPN_v3': ResNet_FPN_v3,
-    'ResNet_FPN_v4': ResNet_FPN_v4,
+    "ResNet_FPN": ResNet_FPN,
 }
 
 
@@ -33,5 +27,5 @@ def create(name, *args, **kwargs):
       If True, the input of this model is the combination of image and word. Default: False
     """
     if name not in __factory:
-        raise KeyError('Unknown model:', name)
+        raise KeyError("Unknown model:", name)
     return __factory[name](*args, **kwargs)

@@ -18,7 +18,7 @@ from .utils.visualization_utils import VisTPS, VisIMG
 
 metrics_factory = evaluation_metrics.factory()
 
-global_args = get_args(sys.argv[1:])
+# global_args = get_args(sys.argv[1:])
 
 
 class BaseEvaluator(object):
