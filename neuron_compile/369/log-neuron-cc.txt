@@ -1,0 +1,45 @@
+08/04/2021 12:03:37 PM INFO [root]: Intermediate files stored in /home/DATA/raghav/inferentia/ICDAR2019-ArT-Recognition-Alchemy/neuron_compile/369, output in /home/DATA/raghav/inferentia/ICDAR2019-ArT-Recognition-Alchemy/neuron_compile/369
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: ***************************************************************
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:  An Internal Compiler Error has occurred
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: ***************************************************************
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: 
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Error message:  [Errno 5] Input/output error
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: 
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Error class:    OSError
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Error location: Unknown
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Command line:   /inferentia/bin/neuron-cc compile /home/DATA/raghav/inferentia/ICDAR2019-ArT-Recognition-Alchemy/neuron_compile/369/graph_def.pb --framework TENSORFLOW --pipeline compile SaveTemps --output /home/DATA/raghav/inferentia/ICDAR2019-ArT-Recognition-Alchemy/neuron_compile/369/graph_def.neff --io-config '{"inputs": {"tensor.1:0": [[1, 31, 512], "float32"], "1:0": [[1, 1, 256], "float32"], "2:0": [[1, 256], "float32"]}, "outputs": ["ExpandDims_2:0"]}' --verbose 1
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: 
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Internal details:
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "neuroncc/driver/CommandDriver.py", line 209, in neuroncc.driver.CommandDriver.CommandDriver.run
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "neuroncc/driver/commands/CompileCommand.py", line 468, in neuroncc.driver.commands.CompileCommand.CompileCommand.run
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "neuroncc/driver/Job.py", line 286, in neuroncc.driver.Job.SingleInputJob.run
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "neuroncc/driver/Job.py", line 289, in neuroncc.driver.Job.SingleInputJob.run
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/concurrent/futures/process.py", line 466, in submit
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     self._start_queue_management_thread()
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/concurrent/futures/process.py", line 427, in _start_queue_management_thread
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     self._adjust_process_count()
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/concurrent/futures/process.py", line 446, in _adjust_process_count
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     p.start()
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/multiprocessing/process.py", line 105, in start
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     self._popen = self._Popen(self)
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/multiprocessing/context.py", line 223, in _Popen
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     return _default_context.get_context().Process._Popen(process_obj)
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/multiprocessing/context.py", line 277, in _Popen
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     return Popen(process_obj)
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/multiprocessing/popen_fork.py", line 17, in __init__
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     util._flush_std_streams()
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   File "/usr/lib/python3.6/multiprocessing/util.py", line 401, in _flush_std_streams
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:     sys.stderr.flush()
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: 
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Version information:
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   Neuron Compiler version 1.4.1.0+737cbb69a
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   HWM version 1.4.1.0-0
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   NEFF version 1.0
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   TVM version 1.4.1.0+0
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   NumPy version 1.19.5
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   MXNet not available
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   TF not available
+08/04/2021 12:03:37 PM ERROR [neuron-cc]:   ONNX not available
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: 
+08/04/2021 12:03:37 PM ERROR [neuron-cc]: Artifacts stored in: /home/DATA/raghav/inferentia/ICDAR2019-ArT-Recognition-Alchemy/neuron_compile/369
